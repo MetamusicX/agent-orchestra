@@ -4,7 +4,7 @@ Agent Orchestra is designed for Claude Code but the architecture is platform-agn
 
 ## What stays the same across platforms
 
-- The orchestrator pattern (Larry routes, never executes)
+- The orchestrator pattern (Atlas routes, never executes)
 - Agent profiles (persona, responsibilities, guardrails)
 - The hiring pipeline (Merlin → Nolan)
 - The folder structure (Owner's Inbox, Team Inbox, Completed Work, Team)
@@ -46,7 +46,7 @@ Agent Orchestra is designed for Claude Code but the architecture is platform-agn
 ### Generic / API-based
 
 If your platform supports:
-1. A system prompt → use it for Larry
+1. A system prompt → use it for Atlas
 2. Multiple conversations or agents → use them for sub-agents
 3. File access → the folder structure works as-is
 

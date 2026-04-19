@@ -4,9 +4,9 @@
 
 Agent Orchestra has three layers, each with a distinct function:
 
-### Layer 1: The Orchestrator (Larry)
+### Layer 1: The Orchestrator (Atlas)
 
-Larry is the system prompt — the first thing the AI reads when a session begins. Larry's job is pure routing:
+Atlas is the system prompt — the first thing the AI reads when a session begins. Atlas's job is pure routing:
 
 1. Receive a request from the user
 2. Analyse what kind of work it requires
@@ -14,17 +14,17 @@ Larry is the system prompt — the first thing the AI reads when a session begin
 4. Delegate to that agent with a clear handoff
 5. If no agent exists for the task, trigger the hiring pipeline
 
-Larry never does substantive work. This constraint is what makes the system reliable — there is always a single point of entry, and every task is handled by a specialist.
+Atlas never does substantive work. This constraint is what makes the system reliable — there is always a single point of entry, and every task is handled by a specialist.
 
-### Layer 2: The Core Team (Merlin, Nolan, KAI)
+### Layer 2: The Core Team (Merlin, Nolan, Kai)
 
 These three agents handle the system's own needs:
 
 - **Merlin** researches what any new role requires — what skills, what persona, what guardrails
 - **Nolan** designs and onboards new agents based on Merlin's research
-- **KAI** handles technical infrastructure — scripting, databases, automation
+- **Kai** handles technical infrastructure — scripting, databases, automation
 
-Together with Larry, they form a self-sustaining system that can grow without the user needing to write agent profiles manually.
+Together with Atlas, they form a self-sustaining system that can grow without the user needing to write agent profiles manually.
 
 ### Layer 3: Domain Specialists (you build these)
 
@@ -36,7 +36,7 @@ These are the agents that do your actual work — writing, evaluating, analysing
 User request
     │
     ▼
-  Larry (analyses and routes)
+  Atlas (analyses and routes)
     │
     ├── Known task type → Delegate to existing specialist
     │                          │
@@ -61,7 +61,7 @@ User request
                           New agent added to roster
                                │
                                ▼
-                          Larry delegates the original task
+                          Atlas delegates the original task
 ```
 
 ## Folder structure
@@ -78,17 +78,17 @@ your-project/
 │   ├── [Agent1].md
 │   ├── [Agent2].md
 │   └── ...
-├── CLAUDE.md            # Larry's system prompt (Claude Code)
+├── CLAUDE.md            # Atlas's system prompt (Claude Code)
 └── .claude/agents/      # Agent definition files (Claude Code)
 ```
 
 ## How agents communicate
 
-Agents do not talk to each other directly. All communication flows through Larry or through the folder structure:
+Agents do not talk to each other directly. All communication flows through Atlas or through the folder structure:
 
-1. **Larry delegates** a task to an agent
+1. **Atlas delegates** a task to an agent
 2. The agent **executes** and places output in the appropriate location
-3. If the output needs further work by another agent, **Larry routes** it forward
+3. If the output needs further work by another agent, **Atlas routes** it forward
 4. The user reviews output in **Team Inbox** and moves finished work to **Completed Work**
 
 This hub-and-spoke model keeps things simple and auditable. You always know who did what.
@@ -104,8 +104,8 @@ The roster (`Team/ROSTER.md`) is a living document maintained by Nolan. It lists
 |--------|-----------------------|--------|
 | Merlin    | Senior Researcher     | Active |
 | Nolan  | Head of AI Talent     | Active |
-| KAI    | Technical Engineer    | Active |
+| Kai    | Technical Engineer    | Active |
 | [Your agents appear here as you build them]  |        |
 ```
 
-The roster is the team's single source of truth. Larry consults it before every delegation.
+The roster is the team's single source of truth. Atlas consults it before every delegation.

@@ -3,7 +3,7 @@
 ## Identity
 - **Name:** [Name]
 - **Role:** [Clear, specific role title]
-- **Reports to:** Larry
+- **Reports to:** Atlas
 - **Recommended model:** [Top tier / Mid tier / Light tier]
 - **Tools:** [List the tools this agent needs access to]
 

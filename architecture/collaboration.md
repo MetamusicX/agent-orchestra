@@ -6,12 +6,12 @@ Some tasks are too complex or too multifaceted for a single agent. A research pr
 
 ## How collaboration works in Agent Orchestra
 
-Agents collaborate through **sequential handoffs**, managed by Larry:
+Agents collaborate through **sequential handoffs**, managed by Atlas:
 
-1. Larry breaks a complex task into stages
+1. Atlas breaks a complex task into stages
 2. Each stage is assigned to the agent best suited for it
 3. Each agent's output becomes the next agent's input
-4. Larry manages the sequence and ensures clean transitions
+4. Atlas manages the sequence and ensures clean transitions
 
 ### Example: a three-agent pipeline
 
@@ -20,7 +20,7 @@ Imagine you need to produce a technical report on a complex topic:
 ```
 Task: "Produce a technical analysis of [topic] with visualisations"
 
-Larry's routing plan:
+Atlas's routing plan:
   Stage 1 → Domain Expert: deep analysis and findings
   Stage 2 → Technical Engineer: data processing and visualisations
   Stage 3 → Writer: final report integrating analysis and visuals
@@ -56,7 +56,7 @@ Do not use collaboration for tasks a single well-designed agent can handle. Addi
 
 ## The hub-and-spoke model
 
-All collaboration flows through Larry. Agents never communicate directly with each other. This keeps the system:
+All collaboration flows through Atlas. Agents never communicate directly with each other. This keeps the system:
 
 - **Auditable** — you can trace every handoff
 - **Debuggable** — if something goes wrong, you know which agent produced which output

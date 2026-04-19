@@ -45,7 +45,7 @@ Every agent profile should end with a one-line summary that reinforces the bound
 
 Examples:
 - *Merlin researches. Merlin does not build, hire, or execute tasks.*
-- *KAI builds. KAI does not research, hire, or theorise.*
+- *Kai builds. Kai does not research, hire, or theorise.*
 - *Nolan hires. Nolan does not research, build, or execute tasks.*
 
 This line is both documentation and a behavioural anchor.

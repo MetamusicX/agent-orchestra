@@ -8,10 +8,10 @@ The hiring pipeline is Agent Orchestra's most distinctive feature: the system ca
 You need a new capability
         │
         ▼
-"Larry, I need a [role] on the team"
+"Atlas, I need a [role] on the team"
         │
         ▼
-Larry asks Merlin to research the role
+Atlas asks Merlin to research the role
         │
         ▼
 Merlin investigates: what does a world-class
@@ -29,7 +29,7 @@ Nolan saves the profile to Team/
 and updates the roster
         │
         ▼
-Larry delegates the original task
+Atlas delegates the original task
 to the new agent
 ```
 
@@ -47,7 +47,7 @@ Merlin produces a structured document for Nolan:
 
 ```
 HIRE BRIEF — [Role Name]
-Requested by: Larry
+Requested by: Atlas
 Date: [date]
 
 1. WHAT THIS PERSON DOES (in a real organisation)
@@ -84,14 +84,14 @@ Nolan then saves the profile to `Team/[NAME].md` and updates `Team/ROSTER.md`.
 
 ## Example
 
-**User:** "Larry, I need someone who can evaluate grant proposals."
+**User:** "Atlas, I need someone who can evaluate grant proposals."
 
-**Larry:** "Routing to Merlin for a Hire Brief on grant evaluation expertise."
+**Atlas:** "Routing to Merlin for a Hire Brief on grant evaluation expertise."
 
 **Merlin** researches grant evaluation — what panels look for, common weaknesses, evaluation frameworks (NIH, ERC, NSF), how experienced reviewers think — and delivers the brief.
 
 **Nolan** designs an agent: GRANT (Grant Review and Assessment Analyst), with a persona of a "veteran panel member who has reviewed hundreds of proposals and knows the difference between promising and fundable", with guardrails that GRANT does not write proposals (only evaluates them) and does not make funding decisions (only advises).
 
-**Larry** delegates the original grant evaluation task to GRANT.
+**Atlas** delegates the original grant evaluation task to GRANT.
 
 The entire process happens in one conversation. No manual configuration required.

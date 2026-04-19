@@ -16,9 +16,9 @@ your-project/
 │   ├── ROSTER.md
 │   ├── Merlin.md
 │   ├── NOLAN.md
-│   ├── KAI.md
+│   ├── Kai.md
 │   └── [Your agents].md
-├── CLAUDE.md                # Larry (orchestrator system prompt)
+├── CLAUDE.md                # Atlas (orchestrator system prompt)
 └── .claude/agents/          # Agent definition files
     ├── merlin.md
     ├── nolan.md
@@ -33,9 +33,9 @@ your-project/
 This is where you place files, documents, or notes for the team to work on. Think of it as your desk — you drop things here when you want something done.
 
 **Rules:**
-- Only you and Larry can see this folder
-- Placing a file here does NOT automatically trigger work — you must explicitly ask Larry
-- Once Larry has routed the work, the source material stays here until the task is complete
+- Only you and Atlas can see this folder
+- Placing a file here does NOT automatically trigger work — you must explicitly ask Atlas
+- Once Atlas has routed the work, the source material stays here until the task is complete
 
 ### Team Inbox
 
@@ -43,7 +43,7 @@ This is where agents deliver their output for your review. When an agent complet
 
 **Rules:**
 - You review everything in Team Inbox before it moves to Completed Work
-- If you want revisions, tell Larry — he'll route the feedback to the right agent
+- If you want revisions, tell Atlas — he'll route the feedback to the right agent
 - Nothing leaves Team Inbox without your approval
 
 ### Completed Work
@@ -51,13 +51,13 @@ This is where agents deliver their output for your review. When an agent complet
 Finished deliverables. Each completed task gets its own subfolder with a clear name.
 
 **Rules:**
-- Larry moves output here only when you've approved it
+- Atlas moves output here only when you've approved it
 - Subfolder names should be descriptive: `Grant Proposal Review - April 2026/`, not `task-47/`
 - This is the archive — once something is here, it's done
 
 ### Team
 
-Agent profiles and the roster. This is Larry's reference when deciding who handles what.
+Agent profiles and the roster. This is Atlas's reference when deciding who handles what.
 
 **Rules:**
 - Nolan maintains this folder

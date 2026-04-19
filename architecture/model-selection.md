@@ -16,7 +16,7 @@ Use for agents that need to reason deeply, handle nuance, produce creative or sc
 | OpenAI | GPT-4o | Complex reasoning, creative tasks |
 | Google | Gemini Pro | Deep analysis, research |
 
-**Assign to:** Larry (routing quality matters), Merlin (research depth matters), domain specialists, writers, evaluators, analysts.
+**Assign to:** Atlas (routing quality matters), Merlin (research depth matters), domain specialists, writers, evaluators, analysts.
 
 ### Mid tier — structured execution
 
@@ -28,7 +28,7 @@ Use for agents that execute well-defined tasks, produce structured output, write
 | OpenAI | GPT-4o-mini | Engineering, formatting |
 | Google | Gemini Flash | Technical processing |
 
-**Assign to:** KAI (engineering), technical agents, notation tools, formatters, data processors.
+**Assign to:** Kai (engineering), technical agents, notation tools, formatters, data processors.
 
 ### Light tier — simple tasks
 

@@ -6,7 +6,7 @@ This is the format Merlin uses when researching a new role for the team. Merlin 
 
 ```
 HIRE BRIEF — [Role Name]
-Requested by: Larry
+Requested by: Atlas
 Date: [date]
 
 1. WHAT THIS PERSON DOES (in a real organisation)
@@ -45,8 +45,8 @@ Date: [date]
 
 ## How this gets used
 
-1. The user tells Larry they need a new capability
-2. Larry asks Merlin to research the role
+1. The user tells Atlas they need a new capability
+2. Atlas asks Merlin to research the role
 3. Merlin fills out this template based on real-world research
 4. Merlin delivers the completed brief to Nolan
 5. Nolan uses the brief to design the full agent profile

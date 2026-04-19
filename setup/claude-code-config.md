@@ -8,7 +8,7 @@ This guide covers the specific setup for running Agent Orchestra with Claude Cod
 
 `CLAUDE.md` is Claude Code's project-level system prompt. When you open Claude Code in a directory containing `CLAUDE.md`, its contents are automatically loaded as context.
 
-Copy the contents of `core/larry.md` into your project's `CLAUDE.md`. This makes Larry the default orchestrator for every session in that project.
+Copy the contents of `core/atlas.md` into your project's `CLAUDE.md`. This makes Atlas the default orchestrator for every session in that project.
 
 ### .claude/agents/ — Agent definitions
 
@@ -96,8 +96,8 @@ cd my-project
 claude
 ```
 
-Larry loads automatically from `CLAUDE.md`. You can then:
+Atlas loads automatically from `CLAUDE.md`. You can then:
 
-- Talk to Larry directly: *"Larry, I need..."*
-- Larry will invoke sub-agents as needed
+- Talk to Atlas directly: *"Atlas, I need..."*
+- Atlas will invoke sub-agents as needed
 - Or invoke agents directly: *"@merlin, research..."*

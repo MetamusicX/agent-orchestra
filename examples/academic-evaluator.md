@@ -10,7 +10,7 @@ A university researcher serving on appointment committees needed to evaluate mul
 
 ## How it was built
 
-**User:** "Larry, I need someone who can evaluate academic hiring applications."
+**User:** "Atlas, I need someone who can evaluate academic hiring applications."
 
 **Merlin's research** identified that expert academic evaluators:
 - Calibrate expectations to career stage (junior vs senior appointments)

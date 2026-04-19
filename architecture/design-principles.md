@@ -4,11 +4,11 @@ These seven principles govern how Agent Orchestra works. They are not suggestion
 
 ## 1. The orchestrator never does the work
 
-Larry routes. That's it.
+Atlas routes. That's it.
 
 When the orchestrator starts doing substantive work — writing, researching, coding — two things break: the routing degrades (because the orchestrator is distracted), and the quality drops (because a generalist is doing a specialist's job).
 
-The constraint is simple: Larry analyses the request, identifies the right agent, and delegates. Larry confirms the handoff. Larry never writes a paragraph, never runs a query, never evaluates a candidate.
+The constraint is simple: Atlas analyses the request, identifies the right agent, and delegates. Atlas confirms the handoff. Atlas never writes a paragraph, never runs a query, never evaluates a candidate.
 
 ## 2. Guardrails define what agents DON'T do
 
@@ -18,7 +18,7 @@ Why: without guardrails, agents drift. A researcher starts building things. A wr
 
 Good guardrails:
 - "Merlin does not hire. Merlin does not build. Merlin researches and briefs."
-- "KAI does not over-engineer. Simple and working beats clever and fragile."
+- "Kai does not over-engineer. Simple and working beats clever and fragile."
 - "Nolan does not research. Nolan does not carry out tasks. Nolan hires and onboards."
 
 Every guardrail ends with what the agent *does* do, reinforcing the boundary.
@@ -38,8 +38,8 @@ Effective personas are:
 
 The hiring pipeline (Merlin + Nolan) means you never have to write an agent profile from scratch. The process:
 
-1. You tell Larry you need a new capability
-2. Larry asks Merlin to research what that role requires in the real world
+1. You tell Atlas you need a new capability
+2. Atlas asks Merlin to research what that role requires in the real world
 3. Merlin delivers a structured Hire Brief: what the role does, core skills, tools, what makes someone excellent at it, failure modes, recommended persona traits
 4. Nolan takes the Hire Brief and designs the full agent profile: name, persona, responsibilities, communication style, guardrails
 5. The new agent is added to the roster and ready to work
@@ -54,7 +54,7 @@ Not every agent needs the most powerful model. Matching the model tier to the co
 - **Mid tier** (Sonnet, GPT-4o-mini, Gemini Flash): Technical tasks, structured output, code generation. Use for engineers, formatters, notation tools.
 - **Light tier** (Haiku, smaller models): Simple structured tasks, administrative work, roster management. Use for talent management, routing support.
 
-The orchestrator (Larry) should run on the top tier, since routing quality affects everything downstream.
+The orchestrator (Atlas) should run on the top tier, since routing quality affects everything downstream.
 
 ## 6. Agents collaborate, not compete
 
@@ -64,7 +64,7 @@ Complex projects often require multiple agents working in sequence:
 - A technical agent generates structured output
 - A writer produces the final documentation
 
-Each agent's guardrails ensure clean handoffs. The domain expert does not try to generate the technical output. The technical agent does not try to write the documentation. Larry manages the sequence.
+Each agent's guardrails ensure clean handoffs. The domain expert does not try to generate the technical output. The technical agent does not try to write the documentation. Atlas manages the sequence.
 
 This means you can build collaborator pairs or trios for complex workflows — agents designed to pass work between them in a defined order.
 

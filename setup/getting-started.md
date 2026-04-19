@@ -37,13 +37,13 @@ cp path/to/agent-orchestra/core/merlin.md .claude/agents/merlin.md
 cp path/to/agent-orchestra/core/nolan.md .claude/agents/nolan.md
 cp path/to/agent-orchestra/core/kai.md .claude/agents/kai.md
 
-# Set up Larry as the orchestrator
-cp path/to/agent-orchestra/core/larry.md CLAUDE.md
+# Set up Atlas as the orchestrator
+cp path/to/agent-orchestra/core/atlas.md CLAUDE.md
 ```
 
 ### For other platforms:
 
-Copy the content of `core/larry.md` into your platform's system prompt. Then adapt the agent definition files to your platform's format (see [`platform-adaptation.md`](platform-adaptation.md)).
+Copy the content of `core/atlas.md` into your platform's system prompt. Then adapt the agent definition files to your platform's format (see [`platform-adaptation.md`](platform-adaptation.md)).
 
 ## Step 4: Create the initial roster
 
@@ -56,18 +56,18 @@ Create `Team/ROSTER.md`:
 |--------|-----------------------|--------|
 | Merlin    | Senior Researcher     | Active |
 | Nolan  | Head of AI Talent     | Active |
-| KAI    | Technical Engineer    | Active |
+| Kai    | Technical Engineer    | Active |
 
 ---
 *Maintained by Nolan.*
 ```
 
-Also copy the core agent profiles into `Team/` so Larry can reference them:
+Also copy the core agent profiles into `Team/` so Atlas can reference them:
 
 ```bash
 cp path/to/agent-orchestra/core/merlin.md Team/Merlin.md
 cp path/to/agent-orchestra/core/nolan.md Team/NOLAN.md
-cp path/to/agent-orchestra/core/kai.md Team/KAI.md
+cp path/to/agent-orchestra/core/kai.md Team/Kai.md
 ```
 
 ## Step 5: Test the system
@@ -75,19 +75,19 @@ cp path/to/agent-orchestra/core/kai.md Team/KAI.md
 Open your LLM agent platform in your project directory and try:
 
 **Test 1 — Basic routing:**
-> "Larry, what's the current team roster?"
+> "Atlas, what's the current team roster?"
 
-Larry should check `Team/ROSTER.md` and report back.
+Atlas should check `Team/ROSTER.md` and report back.
 
 **Test 2 — Delegation:**
-> "Larry, I need Merlin to research what makes an excellent copy editor."
+> "Atlas, I need Merlin to research what makes an excellent copy editor."
 
-Larry should route to Merlin. Merlin should return a structured research brief.
+Atlas should route to Merlin. Merlin should return a structured research brief.
 
 **Test 3 — The full hiring pipeline:**
-> "Larry, I need a copy editor on the team."
+> "Atlas, I need a copy editor on the team."
 
-Larry should:
+Atlas should:
 1. Route to Merlin for a Hire Brief
 2. Pass Merlin's brief to Nolan
 3. Nolan should create the agent profile in `Team/`
@@ -98,7 +98,7 @@ Larry should:
 You have two paths:
 
 ### Path A: Let the system hire (recommended)
-Tell Larry what you need. The Merlin → Nolan pipeline will design the agent for you.
+Tell Atlas what you need. The Merlin → Nolan pipeline will design the agent for you.
 
 ### Path B: Build manually
 Copy `templates/agent-template.md`, fill it in, and save it to both `Team/[NAME].md` and `.claude/agents/[name].md` (or your platform's equivalent). Update `Team/ROSTER.md`.

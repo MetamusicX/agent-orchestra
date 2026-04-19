@@ -22,12 +22,12 @@ Agent Orchestra is an open-source blueprint for building a self-organising team 
 
 The system ships with four core agents:
 
-- **Larry** — the Chief of Staff. Larry never does substantive work. He analyses every incoming request and routes it to the best-fit specialist on the team. If no specialist exists for a given task, Larry triggers the hiring pipeline to create one.
+- **Atlas** — the Chief of Staff. Atlas never does substantive work. He analyses every incoming request and routes it to the best-fit specialist on the team. If no specialist exists for a given task, Atlas triggers the hiring pipeline to create one.
 - **Merlin** — the Senior Researcher. When a new capability is needed, Merlin investigates what a world-class professional in that role actually does — their core skills, their tools, their mental models, their characteristic failure modes. Merlin delivers this as a structured Hire Brief.
 - **Nolan** — the Head of AI Talent. Nolan takes Merlin's research and designs a complete agent profile: a name, a persona, a set of responsibilities, and — most importantly — a set of guardrails defining the agent's boundaries.
-- **KAI** — the Technical Engineer. Scripting, automation, databases, infrastructure. KAI keeps the system running so that every other agent can focus on their domain.
+- **Kai** — the Technical Engineer. Scripting, automation, databases, infrastructure. Kai keeps the system running so that every other agent can focus on their domain.
 
-Everything beyond these four — every specialist, every domain expert, every analyst — is built by you, for your specific needs. Or rather, built by the system itself: you tell Larry what you need, Merlin researches the role, Nolan designs the agent. Your team grows organically, and each new member is informed by real-world research into what that role actually demands.
+Everything beyond these four — every specialist, every domain expert, every analyst — is built by you, for your specific needs. Or rather, built by the system itself: you tell Atlas what you need, Merlin researches the role, Nolan designs the agent. Your team grows organically, and each new member is informed by real-world research into what that role actually demands.
 
 No code required. Every agent is a markdown file.
 
@@ -69,7 +69,7 @@ The guardrail: *"Do not compose. Execute the brief exactly as stated."* The comp
 
 ### Collaborate across agents
 
-The most powerful configuration is not a single agent but a pipeline. In my system, a domain analyst provides the compositional thinking, a dramaturg provides the textual material, and a notation engineer generates the score. Each agent's guardrails ensure clean handoffs: the analyst does not write text, the dramaturg does not make compositional decisions, the engineer does not alter the brief. Larry manages the sequence.
+The most powerful configuration is not a single agent but a pipeline. In my system, a domain analyst provides the compositional thinking, a dramaturg provides the textual material, and a notation engineer generates the score. Each agent's guardrails ensure clean handoffs: the analyst does not write text, the dramaturg does not make compositional decisions, the engineer does not alter the brief. Atlas manages the sequence.
 
 This is not a theoretical architecture. It is how I work every day.
 
@@ -135,7 +135,7 @@ Every agent in Agent Orchestra ends with a line like:
 
 > *Merlin researches. Merlin does not build, hire, or execute tasks.*
 
-> *KAI builds. KAI does not research, hire, or theorise.*
+> *Kai builds. Kai does not research, hire, or theorise.*
 
 This looks like bureaucracy. It is architecture. The boundary is what makes the specialist a specialist. An agent that knows what it must *not* do produces sharper, more reliable work within the domain it owns.
 
@@ -195,7 +195,7 @@ The repository includes:
 - Anonymised examples drawn from a real working deployment
 - Setup guides for Claude Code, with adaptation notes for other platforms
 
-Clone it. Copy the core agents into your project. Open your LLM and say: *"Larry, I need a [role] on the team."*
+Clone it. Copy the core agents into your project. Open your LLM and say: *"Atlas, I need a [role] on the team."*
 
 The system will research the role, design the agent, and add it to your roster. No configuration required. No infrastructure to maintain. Just markdown files and a clear idea about how to organise intelligence.
 
