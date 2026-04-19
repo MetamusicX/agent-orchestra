@@ -16,19 +16,19 @@ Larry is the system prompt — the first thing the AI reads when a session begin
 
 Larry never does substantive work. This constraint is what makes the system reliable — there is always a single point of entry, and every task is handled by a specialist.
 
-### Layer 2: The Core Team (PAX, Nolan, KAI)
+### Layer 2: The Core Team (Merlin, Nolan, KAI)
 
 These three agents handle the system's own needs:
 
-- **PAX** researches what any new role requires — what skills, what persona, what guardrails
-- **Nolan** designs and onboards new agents based on PAX's research
+- **Merlin** researches what any new role requires — what skills, what persona, what guardrails
+- **Nolan** designs and onboards new agents based on Merlin's research
 - **KAI** handles technical infrastructure — scripting, databases, automation
 
 Together with Larry, they form a self-sustaining system that can grow without the user needing to write agent profiles manually.
 
 ### Layer 3: Domain Specialists (you build these)
 
-These are the agents that do your actual work — writing, evaluating, analysing, composing, coding, reviewing. They are built by the hiring pipeline (PAX + Nolan) or manually by the user from the provided templates.
+These are the agents that do your actual work — writing, evaluating, analysing, composing, coding, reviewing. They are built by the hiring pipeline (Merlin + Nolan) or manually by the user from the provided templates.
 
 ## The workflow
 
@@ -49,10 +49,10 @@ User request
     └── Unknown task type → Trigger hiring pipeline
                                │
                                ▼
-                          PAX researches the role
+                          Merlin researches the role
                                │
                                ▼
-                          PAX delivers Hire Brief
+                          Merlin delivers Hire Brief
                                │
                                ▼
                           Nolan designs the agent
@@ -102,7 +102,7 @@ The roster (`Team/ROSTER.md`) is a living document maintained by Nolan. It lists
 
 | Name   | Role                  | Status |
 |--------|-----------------------|--------|
-| PAX    | Senior Researcher     | Active |
+| Merlin    | Senior Researcher     | Active |
 | Nolan  | Head of AI Talent     | Active |
 | KAI    | Technical Engineer    | Active |
 | [Your agents appear here as you build them]  |        |

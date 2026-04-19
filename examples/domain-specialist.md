@@ -10,7 +10,7 @@ A practitioner needed an agent with comprehensive knowledge of a specific histor
 
 ## How it was built
 
-**PAX's research** identified that deep domain specialists:
+**Merlin's research** identified that deep domain specialists:
 - Work from the inside of their subject's thinking, not from external descriptions
 - Distinguish between surface imitation and structural understanding
 - Can articulate every decision using the subject's own terminology

@@ -2,10 +2,10 @@ graph TD
     User([User]) -->|request| Larry[Larry<br/>Chief of Staff]
 
     subgraph Core Team
-        Larry -->|research task| PAX[PAX<br/>Senior Researcher]
+        Larry -->|research task| Merlin[Merlin<br/>Senior Researcher]
         Larry -->|hire request| Nolan[Nolan<br/>Head of AI Talent]
         Larry -->|technical task| KAI[KAI<br/>Technical Engineer]
-        PAX -->|Hire Brief| Nolan
+        Merlin -->|Hire Brief| Nolan
     end
 
     subgraph Your Agents
@@ -25,7 +25,7 @@ graph TD
         A2 -->|output| TI
         A3 -->|output| TI
         KAI -->|output| TI
-        PAX -->|output| TI
+        Merlin -->|output| TI
         TI -->|approved| CW[Completed Work]
     end
 
@@ -33,7 +33,7 @@ graph TD
     User -->|approves| CW
 
     style Larry fill:#e6b800,stroke:#333,color:#000
-    style PAX fill:#4a90d9,stroke:#333,color:#fff
+    style Merlin fill:#4a90d9,stroke:#333,color:#fff
     style Nolan fill:#7bc67e,stroke:#333,color:#000
     style KAI fill:#d97b4a,stroke:#333,color:#fff
     style A1 fill:#9b59b6,stroke:#333,color:#fff

@@ -16,7 +16,7 @@ Use for agents that need to reason deeply, handle nuance, produce creative or sc
 | OpenAI | GPT-4o | Complex reasoning, creative tasks |
 | Google | Gemini Pro | Deep analysis, research |
 
-**Assign to:** Larry (routing quality matters), PAX (research depth matters), domain specialists, writers, evaluators, analysts.
+**Assign to:** Larry (routing quality matters), Merlin (research depth matters), domain specialists, writers, evaluators, analysts.
 
 ### Mid tier — structured execution
 

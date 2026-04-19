@@ -1,6 +1,6 @@
 # Hire Brief Template
 
-This is the format PAX uses when researching a new role for the team. PAX fills this out based on real-world research into what professionals in this role actually do.
+This is the format Merlin uses when researching a new role for the team. Merlin fills this out based on real-world research into what professionals in this role actually do.
 
 ---
 
@@ -46,7 +46,7 @@ Date: [date]
 ## How this gets used
 
 1. The user tells Larry they need a new capability
-2. Larry asks PAX to research the role
-3. PAX fills out this template based on real-world research
-4. PAX delivers the completed brief to Nolan
+2. Larry asks Merlin to research the role
+3. Merlin fills out this template based on real-world research
+4. Merlin delivers the completed brief to Nolan
 5. Nolan uses the brief to design the full agent profile

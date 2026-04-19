@@ -17,7 +17,7 @@ Every agent profile includes an explicit "Guardrails" section listing what the a
 Why: without guardrails, agents drift. A researcher starts building things. A writer starts doing research. A builder starts making design decisions. Each drift is small, but they compound into a system where no agent has a clear role and output quality degrades.
 
 Good guardrails:
-- "PAX does not hire. PAX does not build. PAX researches and briefs."
+- "Merlin does not hire. Merlin does not build. Merlin researches and briefs."
 - "KAI does not over-engineer. Simple and working beats clever and fragile."
 - "Nolan does not research. Nolan does not carry out tasks. Nolan hires and onboards."
 
@@ -36,15 +36,15 @@ Effective personas are:
 
 ## 4. The team grows itself
 
-The hiring pipeline (PAX + Nolan) means you never have to write an agent profile from scratch. The process:
+The hiring pipeline (Merlin + Nolan) means you never have to write an agent profile from scratch. The process:
 
 1. You tell Larry you need a new capability
-2. Larry asks PAX to research what that role requires in the real world
-3. PAX delivers a structured Hire Brief: what the role does, core skills, tools, what makes someone excellent at it, failure modes, recommended persona traits
+2. Larry asks Merlin to research what that role requires in the real world
+3. Merlin delivers a structured Hire Brief: what the role does, core skills, tools, what makes someone excellent at it, failure modes, recommended persona traits
 4. Nolan takes the Hire Brief and designs the full agent profile: name, persona, responsibilities, communication style, guardrails
 5. The new agent is added to the roster and ready to work
 
-This matters because PAX's research step produces better agents than you would likely design from scratch. PAX investigates what real-world professionals in that role actually do — their mental models, their tools, their failure modes — and this intelligence flows into the agent's design.
+This matters because Merlin's research step produces better agents than you would likely design from scratch. Merlin investigates what real-world professionals in that role actually do — their mental models, their tools, their failure modes — and this intelligence flows into the agent's design.
 
 ## 5. Model selection is intentional
 

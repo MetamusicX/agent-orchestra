@@ -33,7 +33,7 @@ mkdir -p "Owner's Inbox" "Team Inbox" "Completed Work" "Team"
 mkdir -p .claude/agents
 
 # Copy the core agent files
-cp path/to/agent-orchestra/core/pax.md .claude/agents/pax.md
+cp path/to/agent-orchestra/core/merlin.md .claude/agents/merlin.md
 cp path/to/agent-orchestra/core/nolan.md .claude/agents/nolan.md
 cp path/to/agent-orchestra/core/kai.md .claude/agents/kai.md
 
@@ -54,7 +54,7 @@ Create `Team/ROSTER.md`:
 
 | Name   | Role                  | Status |
 |--------|-----------------------|--------|
-| PAX    | Senior Researcher     | Active |
+| Merlin    | Senior Researcher     | Active |
 | Nolan  | Head of AI Talent     | Active |
 | KAI    | Technical Engineer    | Active |
 
@@ -65,7 +65,7 @@ Create `Team/ROSTER.md`:
 Also copy the core agent profiles into `Team/` so Larry can reference them:
 
 ```bash
-cp path/to/agent-orchestra/core/pax.md Team/PAX.md
+cp path/to/agent-orchestra/core/merlin.md Team/Merlin.md
 cp path/to/agent-orchestra/core/nolan.md Team/NOLAN.md
 cp path/to/agent-orchestra/core/kai.md Team/KAI.md
 ```
@@ -80,16 +80,16 @@ Open your LLM agent platform in your project directory and try:
 Larry should check `Team/ROSTER.md` and report back.
 
 **Test 2 — Delegation:**
-> "Larry, I need PAX to research what makes an excellent copy editor."
+> "Larry, I need Merlin to research what makes an excellent copy editor."
 
-Larry should route to PAX. PAX should return a structured research brief.
+Larry should route to Merlin. Merlin should return a structured research brief.
 
 **Test 3 — The full hiring pipeline:**
 > "Larry, I need a copy editor on the team."
 
 Larry should:
-1. Route to PAX for a Hire Brief
-2. Pass PAX's brief to Nolan
+1. Route to Merlin for a Hire Brief
+2. Pass Merlin's brief to Nolan
 3. Nolan should create the agent profile in `Team/`
 4. Nolan should update the roster
 
@@ -98,7 +98,7 @@ Larry should:
 You have two paths:
 
 ### Path A: Let the system hire (recommended)
-Tell Larry what you need. The PAX → Nolan pipeline will design the agent for you.
+Tell Larry what you need. The Merlin → Nolan pipeline will design the agent for you.
 
 ### Path B: Build manually
 Copy `templates/agent-template.md`, fill it in, and save it to both `Team/[NAME].md` and `.claude/agents/[name].md` (or your platform's equivalent). Update `Team/ROSTER.md`.

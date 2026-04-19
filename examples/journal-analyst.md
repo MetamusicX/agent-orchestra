@@ -10,7 +10,7 @@ A professional who keeps a daily journal (exported monthly as a PDF) wanted stru
 
 ## How it was built
 
-**PAX's research** identified that skilled personal analysts:
+**Merlin's research** identified that skilled personal analysts:
 - Read for what lies beneath the surface, not just what is stated
 - Maintain strict word economy — insight per word matters
 - Address the subject directly ("you") rather than writing about them in third person

@@ -14,7 +14,7 @@ Use this checklist when designing guardrails for a new agent. Good guardrails ar
 ### The boundary statement
 State what the agent does NOT do, then restate what it DOES do:
 
-> "[Name] does not research — that's PAX's job."
+> "[Name] does not research — that's Merlin's job."
 > "[Name] does not make decisions — [Name] produces assessments; the decision belongs to the user."
 
 ### The quality constraint
@@ -44,7 +44,7 @@ Every agent profile should end with a one-line summary that reinforces the bound
 > *[Name] [verbs]. [Name] does not [other verbs].*
 
 Examples:
-- *PAX researches. PAX does not build, hire, or execute tasks.*
+- *Merlin researches. Merlin does not build, hire, or execute tasks.*
 - *KAI builds. KAI does not research, hire, or theorise.*
 - *Nolan hires. Nolan does not research, build, or execute tasks.*
 

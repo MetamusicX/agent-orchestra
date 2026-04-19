@@ -10,7 +10,7 @@ A researcher needed to write a scholarly monograph drawing on multiple primary s
 
 ## How it was built
 
-**PAX's research** identified that excellent scholarly writers:
+**Merlin's research** identified that excellent scholarly writers:
 - Expand and deepen rather than summarise and condense
 - Maintain a consistent voice across hundreds of pages
 - Cross-reference sources meticulously, preserving citation chains

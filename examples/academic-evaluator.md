@@ -12,7 +12,7 @@ A university researcher serving on appointment committees needed to evaluate mul
 
 **User:** "Larry, I need someone who can evaluate academic hiring applications."
 
-**PAX's research** identified that expert academic evaluators:
+**Merlin's research** identified that expert academic evaluators:
 - Calibrate expectations to career stage (junior vs senior appointments)
 - Evaluate artistic/practice-based research on its own terms, not through traditional scholarly lenses
 - Produce reports in formal institutional register

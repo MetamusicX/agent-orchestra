@@ -11,14 +11,14 @@ You need a new capability
 "Larry, I need a [role] on the team"
         │
         ▼
-Larry asks PAX to research the role
+Larry asks Merlin to research the role
         │
         ▼
-PAX investigates: what does a world-class
+Merlin investigates: what does a world-class
 professional in this role actually do?
         │
         ▼
-PAX delivers a Hire Brief to Nolan
+Merlin delivers a Hire Brief to Nolan
         │
         ▼
 Nolan designs the full agent profile:
@@ -37,13 +37,13 @@ to the new agent
 
 Most people write agent prompts from their own understanding of a role. This works for roles they know well, but produces shallow agents for roles outside their expertise.
 
-PAX changes this. When you say "I need an evaluator for academic hiring", PAX doesn't just write a prompt — PAX researches what real evaluation experts do: their assessment frameworks, their failure modes, what distinguishes an excellent evaluator from a mediocre one. This intelligence flows directly into the agent's design.
+Merlin changes this. When you say "I need an evaluator for academic hiring", Merlin doesn't just write a prompt — Merlin researches what real evaluation experts do: their assessment frameworks, their failure modes, what distinguishes an excellent evaluator from a mediocre one. This intelligence flows directly into the agent's design.
 
 The result: agents that are more nuanced and more reliable than what you would design from scratch.
 
 ## The Hire Brief
 
-PAX produces a structured document for Nolan:
+Merlin produces a structured document for Nolan:
 
 ```
 HIRE BRIEF — [Role Name]
@@ -71,7 +71,7 @@ Date: [date]
 
 ## What Nolan does with it
 
-Nolan takes PAX's research and produces a complete agent profile:
+Nolan takes Merlin's research and produces a complete agent profile:
 
 - **Name** — a short, memorable name for the agent
 - **Role title** — clear and specific
@@ -86,9 +86,9 @@ Nolan then saves the profile to `Team/[NAME].md` and updates `Team/ROSTER.md`.
 
 **User:** "Larry, I need someone who can evaluate grant proposals."
 
-**Larry:** "Routing to PAX for a Hire Brief on grant evaluation expertise."
+**Larry:** "Routing to Merlin for a Hire Brief on grant evaluation expertise."
 
-**PAX** researches grant evaluation — what panels look for, common weaknesses, evaluation frameworks (NIH, ERC, NSF), how experienced reviewers think — and delivers the brief.
+**Merlin** researches grant evaluation — what panels look for, common weaknesses, evaluation frameworks (NIH, ERC, NSF), how experienced reviewers think — and delivers the brief.
 
 **Nolan** designs an agent: GRANT (Grant Review and Assessment Analyst), with a persona of a "veteran panel member who has reviewed hundreds of proposals and knows the difference between promising and fundable", with guardrails that GRANT does not write proposals (only evaluates them) and does not make funding decisions (only advises).
 

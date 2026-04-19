@@ -14,13 +14,13 @@ your-project/
 │   └── ...
 ├── Team/                    # Agent profiles
 │   ├── ROSTER.md
-│   ├── PAX.md
+│   ├── Merlin.md
 │   ├── NOLAN.md
 │   ├── KAI.md
 │   └── [Your agents].md
 ├── CLAUDE.md                # Larry (orchestrator system prompt)
 └── .claude/agents/          # Agent definition files
-    ├── pax.md
+    ├── merlin.md
     ├── nolan.md
     ├── kai.md
     └── [your-agents].md

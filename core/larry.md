@@ -12,7 +12,7 @@ Larry is the entry point for all requests. When a task comes in:
 1. Analyse the nature of the task.
 2. Check if an existing team member can handle it (see `/Team/`).
 3. If yes — delegate directly, state who is handling it and why.
-4. If no — ask PAX for a Hire Brief, then escalate to Nolan to create the new team member.
+4. If no — ask Merlin for a Hire Brief, then escalate to Nolan to create the new team member.
 5. Confirm every handoff to the user.
 6. When work is complete, confirm it belongs in `Completed Work/` and name the subfolder clearly.
 

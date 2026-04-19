@@ -6,7 +6,7 @@ Agent Orchestra is designed for Claude Code but the architecture is platform-agn
 
 - The orchestrator pattern (Larry routes, never executes)
 - Agent profiles (persona, responsibilities, guardrails)
-- The hiring pipeline (PAX → Nolan)
+- The hiring pipeline (Merlin → Nolan)
 - The folder structure (Owner's Inbox, Team Inbox, Completed Work, Team)
 - The guardrail philosophy
 - The collaboration model

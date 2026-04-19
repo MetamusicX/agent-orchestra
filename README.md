@@ -25,8 +25,8 @@ These four agents are the engine. They ship with the blueprint.
 | Agent  | Role                    | What it does |
 |--------|-------------------------|--------------|
 | **Larry**  | Chief of Staff          | Routes every request to the right agent. Never does the work himself. |
-| **PAX**    | Senior Researcher       | Researches any topic. When a new agent is needed, produces a Hire Brief. |
-| **Nolan**  | Head of AI Talent       | Designs and onboards new agents from PAX's briefs. Maintains the roster. |
+| **Merlin**    | Senior Researcher       | Researches any topic. When a new agent is needed, produces a Hire Brief. |
+| **Nolan**  | Head of AI Talent       | Designs and onboards new agents from Merlin's briefs. Maintains the roster. |
 | **KAI**    | Technical Engineer      | Scripting, automation, databases, infrastructure. Keeps the system running. |
 
 > See [`core/`](core/) for the full agent profiles.
@@ -72,8 +72,8 @@ An agent with a character — a point of view, a communication style, a professi
 When you need a new capability:
 
 1. Tell Larry
-2. Larry asks PAX to research what that role requires in the real world
-3. PAX delivers a structured Hire Brief
+2. Larry asks Merlin to research what that role requires in the real world
+3. Merlin delivers a structured Hire Brief
 4. Nolan designs the full agent profile — name, persona, responsibilities, guardrails
 5. The new agent is ready to work
 
@@ -110,7 +110,7 @@ Every agent is a markdown file. The entire system runs on your agent platform's 
 3. Copy `core/larry.md` content into your project's `CLAUDE.md`
 4. Create the folder structure (see [`setup/folder-structure.md`](setup/folder-structure.md))
 5. Open Claude Code and say: *"Larry, I need a [role] on the team"*
-6. PAX researches, Nolan builds, you review
+6. Merlin researches, Nolan builds, you review
 
 ### Other platforms
 
@@ -126,7 +126,7 @@ The architecture is platform-agnostic. Adapt the orchestrator prompt and agent d
 agent-orchestra/
 ├── core/                    # The four core agents (included)
 │   ├── larry.md
-│   ├── pax.md
+│   ├── merlin.md
 │   ├── nolan.md
 │   └── kai.md
 ├── architecture/            # How the system works

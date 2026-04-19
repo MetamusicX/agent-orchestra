@@ -16,7 +16,7 @@ Claude Code supports sub-agents defined as markdown files in `.claude/agents/`. 
 
 ```
 .claude/agents/
-├── pax.md
+├── merlin.md
 ├── nolan.md
 ├── kai.md
 └── [your-agents].md
@@ -26,8 +26,8 @@ Agent files use frontmatter to configure the agent:
 
 ```yaml
 ---
-name: pax
-description: Senior Researcher. Use PAX for deep research tasks and producing Hire Briefs.
+name: merlin
+description: Senior Researcher. Use Merlin for deep research tasks and producing Hire Briefs.
 model: claude-opus-4-6
 tools: WebSearch, WebFetch, Read, Glob, Grep
 ---
@@ -39,8 +39,8 @@ tools: WebSearch, WebFetch, Read, Glob, Grep
 
 | Field | Purpose | Example |
 |-------|---------|---------|
-| `name` | Agent identifier | `pax` |
-| `description` | When to use this agent (shown in agent selection) | `Senior Researcher. Use PAX for deep research tasks.` |
+| `name` | Agent identifier | `merlin` |
+| `description` | When to use this agent (shown in agent selection) | `Senior Researcher. Use Merlin for deep research tasks.` |
 | `model` | Which Claude model to use | `claude-opus-4-6`, `claude-sonnet-4-6`, `claude-haiku-4-5-20251001` |
 | `tools` | Which tools the agent can access | `Read, Write, Edit, Bash, Glob, Grep, WebSearch, WebFetch` |
 
@@ -100,4 +100,4 @@ Larry loads automatically from `CLAUDE.md`. You can then:
 
 - Talk to Larry directly: *"Larry, I need..."*
 - Larry will invoke sub-agents as needed
-- Or invoke agents directly: *"@pax, research..."*
+- Or invoke agents directly: *"@merlin, research..."*
