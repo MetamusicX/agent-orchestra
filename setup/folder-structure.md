@@ -1,6 +1,6 @@
 # Folder Structure
 
-Agent Orchestra uses a simple folder structure to manage workflow. No databases, no project management tools — just folders and files.
+Zissa Agent Orchestra uses a simple folder structure to manage workflow. No databases, no project management tools — just folders and files.
 
 ## The layout
 

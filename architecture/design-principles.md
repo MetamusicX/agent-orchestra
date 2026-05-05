@@ -1,6 +1,6 @@
 # Design Principles
 
-These seven principles govern how Agent Orchestra works. They are not suggestions — they are load-bearing constraints that make the system reliable.
+These seven principles govern how Zissa Agent Orchestra works. They are not suggestions — they are load-bearing constraints that make the system reliable.
 
 ## 1. The orchestrator never does the work
 

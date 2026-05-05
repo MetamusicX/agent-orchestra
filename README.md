@@ -1,4 +1,4 @@
-# Agent Orchestra
+# Zissa Agent Orchestra
 
 **Turn one AI assistant into a self-organising team.**
 
@@ -12,7 +12,7 @@ A blueprint for building a team of specialised AI agents — each with a role, a
 
 One AI assistant doing everything is like one employee doing every job. It works — until it doesn't.
 
-Agent Orchestra takes a different approach: a small **core team** handles orchestration, research, hiring, and infrastructure. You then build **your own specialists** — agents tailored to your domain, your projects, your workflow. The system helps you design them.
+Zissa Agent Orchestra takes a different approach: a small **core team** handles orchestration, research, hiring, and infrastructure. You then build **your own specialists** — agents tailored to your domain, your projects, your workflow. The system helps you design them.
 
 No code required. Every agent is a markdown file.
 
@@ -123,7 +123,7 @@ The architecture is platform-agnostic. Adapt the orchestrator prompt and agent d
 ## Repository structure
 
 ```
-agent-orchestra/
+zissa-agent-orchestra/
 ├── core/                    # The four core agents (included)
 │   ├── atlas.md
 │   ├── merlin.md

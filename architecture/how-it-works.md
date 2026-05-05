@@ -1,8 +1,8 @@
-# How Agent Orchestra Works
+# How Zissa Agent Orchestra Works
 
 ## The three layers
 
-Agent Orchestra has three layers, each with a distinct function:
+Zissa Agent Orchestra has three layers, each with a distinct function:
 
 ### Layer 1: The Orchestrator (Atlas)
 

@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide walks you through setting up Agent Orchestra from scratch. In 15 minutes, you'll have a working team with an orchestrator, a researcher, a talent manager, and an engineer — ready to build your own specialists.
+This guide walks you through setting up Zissa Agent Orchestra from scratch. In 15 minutes, you'll have a working team with an orchestrator, a researcher, a talent manager, and an engineer — ready to build your own specialists.
 
 ## Step 1: Create your project directory
 
@@ -33,12 +33,12 @@ mkdir -p "Owner's Inbox" "Team Inbox" "Completed Work" "Team"
 mkdir -p .claude/agents
 
 # Copy the core agent files
-cp path/to/agent-orchestra/core/merlin.md .claude/agents/merlin.md
-cp path/to/agent-orchestra/core/nolan.md .claude/agents/nolan.md
-cp path/to/agent-orchestra/core/kai.md .claude/agents/kai.md
+cp path/to/zissa-agent-orchestra/core/merlin.md .claude/agents/merlin.md
+cp path/to/zissa-agent-orchestra/core/nolan.md .claude/agents/nolan.md
+cp path/to/zissa-agent-orchestra/core/kai.md .claude/agents/kai.md
 
 # Set up Atlas as the orchestrator
-cp path/to/agent-orchestra/core/atlas.md CLAUDE.md
+cp path/to/zissa-agent-orchestra/core/atlas.md CLAUDE.md
 ```
 
 ### For other platforms:
@@ -65,9 +65,9 @@ Create `Team/ROSTER.md`:
 Also copy the core agent profiles into `Team/` so Atlas can reference them:
 
 ```bash
-cp path/to/agent-orchestra/core/merlin.md Team/Merlin.md
-cp path/to/agent-orchestra/core/nolan.md Team/NOLAN.md
-cp path/to/agent-orchestra/core/kai.md Team/Kai.md
+cp path/to/zissa-agent-orchestra/core/merlin.md Team/Merlin.md
+cp path/to/zissa-agent-orchestra/core/nolan.md Team/NOLAN.md
+cp path/to/zissa-agent-orchestra/core/kai.md Team/Kai.md
 ```
 
 ## Step 5: Test the system

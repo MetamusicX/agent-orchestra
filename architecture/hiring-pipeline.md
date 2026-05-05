@@ -1,6 +1,6 @@
 # The Hiring Pipeline
 
-The hiring pipeline is Agent Orchestra's most distinctive feature: the system can design and onboard its own new members.
+The hiring pipeline is Zissa Agent Orchestra's most distinctive feature: the system can design and onboard its own new members.
 
 ## How it works
 

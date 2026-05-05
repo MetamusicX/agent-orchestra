@@ -1,6 +1,6 @@
 # Example: Journal Analyst
 
-This is an anonymised example of a domain specialist built using Agent Orchestra. It demonstrates how to create an agent for personal data analysis.
+This is an anonymised example of a domain specialist built using Zissa Agent Orchestra. It demonstrates how to create an agent for personal data analysis.
 
 ---
 

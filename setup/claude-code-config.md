@@ -1,6 +1,6 @@
 # Claude Code Configuration
 
-This guide covers the specific setup for running Agent Orchestra with Claude Code.
+This guide covers the specific setup for running Zissa Agent Orchestra with Claude Code.
 
 ## Key files
 

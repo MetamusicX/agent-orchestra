@@ -4,7 +4,7 @@
 
 Some tasks are too complex or too multifaceted for a single agent. A research project might need deep domain analysis AND technical output generation AND scholarly writing. Asking one agent to do all three produces mediocre results across the board.
 
-## How collaboration works in Agent Orchestra
+## How collaboration works in Zissa Agent Orchestra
 
 Agents collaborate through **sequential handoffs**, managed by Atlas:
 

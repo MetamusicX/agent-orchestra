@@ -1,6 +1,6 @@
 # Platform Adaptation Guide
 
-Agent Orchestra is designed for Claude Code but the architecture is platform-agnostic. This guide explains how to adapt it to other LLM agent platforms.
+Zissa Agent Orchestra is designed for Claude Code but the architecture is platform-agnostic. This guide explains how to adapt it to other LLM agent platforms.
 
 ## What stays the same across platforms
 
@@ -57,7 +57,7 @@ If your platform does NOT support sub-agents natively, you can still use the pat
 
 ## Contributing platform guides
 
-If you adapt Agent Orchestra to a new platform, consider contributing a detailed guide. Include:
+If you adapt Zissa Agent Orchestra to a new platform, consider contributing a detailed guide. Include:
 
 1. How to set up the orchestrator
 2. How to define and invoke sub-agents

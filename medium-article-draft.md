@@ -1,24 +1,21 @@
-# Agent Orchestra: Beyond Coding Agents
+# Zissa Agent Orchestra: Beyond Coding Agents
 
 ## A self-organising AI team for knowledge work without coding
 
 ---
 
-There is a growing ecosystem of tools for managing AI coding agents. Platforms like [Multica](https://github.com/multica-ai/multica), [Devin](https://devin.ai/), and [Factory](https://factory.ai/) let you assign GitHub issues to AI teammates who autonomously write code, create pull requests, and close tickets. They are impressive engineering. They are also solving only half the problem.
-
-Most knowledge work is not code.
-
-It is writing a monograph. Analysing a journal for patterns you cannot see from inside your own life. Researching the compositional systems of a historical figure across a seventy-work catalogue. Drafting a libretto in German that is designed to be fragmented and reassembled by a composer. Producing a structured report from a hundred pages of raw notes. Translating a complex brief into publication-ready musical notation.
+There is a growing ecosystem of tools for managing AI coding agents. Platforms like [Multica][1], [Devin][2], and [Factory][3] let you assign GitHub issues to AI teammates who autonomously write code, create pull requests, and close tickets. They are impressive engineering. They are also solving only half the problem. 
+Most knowledge work is not code. It is writing a monograph. Analysing a journal for patterns you cannot see from inside your own life. Researching the compositional systems of a historical figure across a seventy-work catalogue. Drafting a libretto in German that is designed to be fragmented and reassembled by a composer. Producing a structured report from a hundred pages of raw notes. Translating a complex brief into publication-ready musical notation.
 
 These tasks require expertise, judgement, and sustained consistency — exactly what a well-designed AI agent can provide. Yet almost every agent framework assumes the agent's job is to produce software.
 
-I needed something different. So I built it.
+As an advanced knowledge worker, I needed something different. So I built it.
 
 ---
 
-## Agent Orchestra: a team, not a tool
+## Zissa Agent Orchestra: a team, not a tool
 
-Agent Orchestra is an open-source blueprint for building a self-organising team of AI agents. Each agent has a distinct role, a professional persona, domain-specific expertise, and — crucially — explicit boundaries defining what it does *not* do.
+Zissa Agent Orchestra is an open-source blueprint for building a self-organising team of AI agents. Each agent has a distinct role, a professional persona, domain-specific expertise, and — crucially — explicit boundaries defining what it does *not* do.
 
 The system ships with four core agents:
 
@@ -92,9 +89,9 @@ The pattern is always the same: a persona that embodies genuine expertise, respo
 
 ## How is this different from existing agent platforms?
 
-Platforms like [Multica](https://github.com/multica-ai/multica) are excellent at what they do: managing coding agents through a visual project board with issue tracking, real-time progress streaming, and autonomous execution. I installed and tested Multica on my own system — it works well. You assign an issue, an agent picks it up, executes the task, reports progress, and closes the ticket.
+Platforms like [Multica][4] are excellent at what they do: managing coding agents through a visual project board with issue tracking, real-time progress streaming, and autonomous execution. I installed and tested Multica on my own system — it works well. You assign an issue, an agent picks it up, executes the task, reports progress, and closes the ticket.
 
-But it is built for a specific workflow: software development. Agent Orchestra addresses a different need.
+But it is built for a specific workflow: software development. Zissa Agent Orchestra addresses a different need.
 
 ### 1. It is not limited to coding
 
@@ -131,7 +128,7 @@ The most counterintuitive lesson from building this system: **what an agent does
 
 Without explicit boundaries, agents drift. A researcher starts building things. A writer starts doing research instead of writing. A technical engineer starts making design decisions that belong to the domain expert. Each drift is individually small, but they compound. Within a few interactions, no agent has a clear role, and output quality degrades across the board.
 
-Every agent in Agent Orchestra ends with a line like:
+Every agent in Zissa Agent Orchestra ends with a line like:
 
 > *Merlin researches. Merlin does not build, hire, or execute tasks.*
 
@@ -158,7 +155,7 @@ There is a widespread assumption that giving an AI agent a "personality" is cosm
 
 "A scholar-writer: do not summarise — expand and deepen" produces fundamentally different prose than "a writing assistant." The persona tells the model not just *what* to produce but *how to think* while producing it.
 
-In Agent Orchestra, persona design follows three principles:
+In Zissa Agent Orchestra, persona design follows three principles:
 
 1. **Be specific.** Not "helpful and knowledgeable" but "a sharp startup recruiter who deeply cares about fit — not just skills on paper, but the right personality and communication style for the team."
 2. **Be behavioural.** Describe how the agent acts and decides, not just what it knows.
@@ -184,9 +181,9 @@ The economics are more favourable than they appear. Most agents are idle most of
 
 ## Getting started
 
-Agent Orchestra is open source and available on GitHub:
+Zissa Agent Orchestra is open source and available on GitHub:
 
-**[github.com/MetamusicX/agent-orchestra][1]**
+**[github.com/MetamusicX/zissa-agent-orchestra][5]**
 
 The repository includes:
 - The four core agents, ready to deploy
@@ -207,7 +204,11 @@ The system will research the role, design the agent, and add it to your roster. 
 
 **Paulo de Assis** is a Senior Research Fellow at the Orpheus Institute (Ghent, Belgium) and Principal Investigator of the ERC-funded project *Posthuman Music*. He works at the intersection of artistic research, musical composition, contemporary philosophy, and AI.
 
-[GitHub: MetamusicX][2]
+[GitHub: MetamusicX][6]
 
-[1]:	https://github.com/MetamusicX/agent-orchestra
-[2]:	https://github.com/MetamusicX
+[1]:	https://github.com/multica-ai/multica
+[2]:	https://devin.ai/
+[3]:	https://factory.ai/
+[4]:	https://github.com/multica-ai/multica
+[5]:	https://github.com/MetamusicX/zissa-agent-orchestra
+[6]:	https://github.com/MetamusicX

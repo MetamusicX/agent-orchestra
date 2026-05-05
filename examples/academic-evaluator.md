@@ -1,6 +1,6 @@
 # Example: Academic Evaluator
 
-This is an anonymised example of a domain specialist built using Agent Orchestra. It demonstrates how to create an agent for expert assessment work.
+This is an anonymised example of a domain specialist built using Zissa Agent Orchestra. It demonstrates how to create an agent for expert assessment work.
 
 ---
 
