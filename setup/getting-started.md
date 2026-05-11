@@ -14,7 +14,11 @@ cd my-project
 ## Step 2: Set up the folder structure
 
 ```bash
-mkdir -p "Owner's Inbox" "Team Inbox" "Completed Work" "Team"
+mkdir -p "Owner's Inbox" "Team Inbox" "Completed Work" "Team" "Team/journals"
+mkdir -p "Team Knowledge/tasks/open" "Team Knowledge/tasks/in-progress"
+mkdir -p "Team Knowledge/tasks/done" "Team Knowledge/tasks/cancelled"
+mkdir -p "Team Knowledge/SOPs" "Team Knowledge/Workstreams"
+mkdir -p "Session Logs"
 ```
 
 | Folder | Purpose |
@@ -23,6 +27,8 @@ mkdir -p "Owner's Inbox" "Team Inbox" "Completed Work" "Team"
 | `Team Inbox` | Agents deliver output here for your review |
 | `Completed Work` | Finished deliverables (one subfolder per task) |
 | `Team` | Agent profiles and roster |
+| `Team Knowledge` | Tasks, SOPs, and workstreams |
+| `Session Logs` | Structured session summaries |
 
 ## Step 3: Install the core team
 
@@ -62,12 +68,26 @@ Create `Team/ROSTER.md`:
 *Maintained by Nolan.*
 ```
 
-Also copy the core agent profiles into `Team/` so Atlas can reference them:
+Also copy the core agent profiles into `Team/` and create their journal directories:
 
 ```bash
 cp path/to/zissa-agent-orchestra/core/merlin.md Team/Merlin.md
 cp path/to/zissa-agent-orchestra/core/nolan.md Team/NOLAN.md
 cp path/to/zissa-agent-orchestra/core/kai.md Team/Kai.md
+
+# Create journal directories for each core agent
+mkdir -p Team/journals/merlin Team/journals/nolan Team/journals/kai
+```
+
+Create the Session Logs index:
+
+```bash
+cat > "Session Logs/INDEX.md" << 'EOF'
+# Session Logs
+
+| Date | Agents | Summary | Tasks |
+|------|--------|---------|-------|
+EOF
 ```
 
 ## Step 5: Test the system
@@ -93,7 +113,19 @@ Atlas should:
 3. Nolan should create the agent profile in `Team/`
 4. Nolan should update the roster
 
-## Step 6: Build your first custom agent
+## Step 6: Test the persistence layer
+
+**Test 4 — Task Walker:**
+> "Atlas, what's open?"
+
+Atlas should walk `Team Knowledge/tasks/open/` and `Team Knowledge/tasks/in-progress/` and report that nothing is queued yet.
+
+**Test 5 — Session close:**
+> "Close session"
+
+Atlas should write a session log to `Session Logs/`, update `INDEX.md`, and confirm.
+
+## Step 7: Build your first custom agent
 
 You have two paths:
 

@@ -36,6 +36,10 @@ produces repeated deliverables — e.g., reports, assessments,
 briefs. Delete this section if not applicable.]
 ```
 
+## Journal
+
+This agent's durable insights are stored at `Team/journals/[name]/`. Atlas checks this journal before delegating tasks and writes new entries when the agent discovers something reusable.
+
 ## Guardrails
 
 - [Name] does not [thing outside its scope].

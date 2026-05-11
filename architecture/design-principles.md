@@ -77,3 +77,15 @@ Every agent is a markdown file. The entire system runs on your LLM platform's na
 - A folder structure for workflow management
 
 There is no framework to install, no API to configure, no runtime to maintain. If you can edit a text file, you can build and modify agents.
+
+## 8. The team remembers
+
+Between sessions, an LLM agent forgets everything. This is the fundamental limitation that every multi-session workflow eventually hits. Tasks, agent journals, and session logs exist to compensate for it.
+
+- **Tasks** persist as files that Atlas walks at session start — nothing falls through the cracks between sessions.
+- **Journal entries** capture what agents learned, so they do not repeat mistakes or rediscover the same insights.
+- **Session logs** record what happened, so the next session can continue where the last one stopped.
+
+Every piece of persistent state is a plain markdown file — readable by any human, any LLM, on any platform. Memory is not a feature of the model; it is a feature of the file system.
+
+This principle is what turns a collection of agents into a team that improves over time. Without persistence, every session starts from zero. With it, learning compounds.

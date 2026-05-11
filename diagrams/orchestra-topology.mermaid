@@ -29,6 +29,25 @@ graph TD
         TI -->|approved| CW[Completed Work]
     end
 
+    subgraph Team Knowledge
+        Tasks[tasks/<br/>open / in-progress / done]
+        SOPs[SOPs/<br/>Procedures]
+        WS[Workstreams/<br/>Multi-agent flows]
+        Atlas -->|walks at session start| Tasks
+        Atlas -->|references when delegating| SOPs
+        Atlas -->|follows handoff protocol| WS
+    end
+
+    subgraph Persistence
+        SL[Session Logs/]
+        JRN[Team/journals/]
+        Atlas -->|writes at session close| SL
+        A1 -.->|durable insights| JRN
+        A2 -.->|durable insights| JRN
+        A3 -.->|durable insights| JRN
+        JRN -.->|informs next delegation| Atlas
+    end
+
     User -->|reviews| TI
     User -->|approves| CW
 
@@ -40,3 +59,8 @@ graph TD
     style A2 fill:#9b59b6,stroke:#333,color:#fff
     style A3 fill:#9b59b6,stroke:#333,color:#fff
     style AN fill:#9b59b6,stroke:#333,color:#fff,stroke-dasharray: 5 5
+    style Tasks fill:#2ecc71,stroke:#333,color:#000
+    style SOPs fill:#2ecc71,stroke:#333,color:#000
+    style WS fill:#2ecc71,stroke:#333,color:#000
+    style SL fill:#3498db,stroke:#333,color:#fff
+    style JRN fill:#3498db,stroke:#333,color:#fff

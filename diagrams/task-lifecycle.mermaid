@@ -1,0 +1,44 @@
+%% Task Lifecycle — State transitions for task files in Team Knowledge/tasks/
+
+stateDiagram-v2
+    [*] --> open : Atlas creates task
+    open --> in_progress : Agent picks up work
+    in_progress --> in_progress : Agent updates progress
+    in_progress --> open : Agent blocked, returns to queue
+    in_progress --> done : Work complete + approved
+    open --> cancelled : User cancels
+    in_progress --> cancelled : User cancels
+    done --> [*]
+    cancelled --> [*]
+
+    state open {
+        direction LR
+        note right of open
+            File location: tasks/open/
+            Atlas surfaces these at session start
+        end note
+    }
+
+    state in_progress {
+        direction LR
+        note right of in_progress
+            File location: tasks/in-progress/
+            Stale after 7 days without update
+        end note
+    }
+
+    state done {
+        direction LR
+        note right of done
+            File location: tasks/done/YYYY/MM/
+            Archived by month
+        end note
+    }
+
+    state cancelled {
+        direction LR
+        note right of cancelled
+            File location: tasks/cancelled/YYYY/MM/
+            Archived by month
+        end note
+    }

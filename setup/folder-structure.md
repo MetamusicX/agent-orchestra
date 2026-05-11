@@ -17,7 +17,22 @@ your-project/
 │   ├── Merlin.md
 │   ├── NOLAN.md
 │   ├── Kai.md
-│   └── [Your agents].md
+│   ├── [Your agents].md
+│   └── journals/            # Per-agent durable insights
+│       ├── merlin/
+│       ├── nolan/
+│       ├── kai/
+│       └── [your-agents]/
+├── Team Knowledge/          # Operational knowledge
+│   ├── tasks/               # Tracked work items
+│   │   ├── open/
+│   │   ├── in-progress/
+│   │   ├── done/YYYY/MM/
+│   │   └── cancelled/YYYY/MM/
+│   ├── SOPs/                # Standard Operating Procedures
+│   └── Workstreams/         # Multi-agent orchestration flows
+├── Session Logs/            # Structured session summaries
+│   └── INDEX.md
 ├── CLAUDE.md                # Atlas (orchestrator system prompt)
 └── .claude/agents/          # Agent definition files
     ├── merlin.md
@@ -64,6 +79,27 @@ Agent profiles and the roster. This is Atlas's reference when deciding who handl
 - Every active agent has a profile here
 - `ROSTER.md` is the single source of truth for team composition
 - When a new agent is hired, Nolan places the profile here and updates the roster
+- Each agent has a journal directory at `journals/<agent-name>/` for durable insights
+
+### Team Knowledge
+
+The team's operational playbook — tasks, SOPs, and workstreams.
+
+**Rules:**
+- `tasks/` holds tracked work items. Folder location is status: `open/`, `in-progress/`, `done/YYYY/MM/`, `cancelled/YYYY/MM/`
+- `SOPs/` holds Standard Operating Procedures — atomic, single-agent procedures for recurring tasks
+- `Workstreams/` holds multi-agent orchestration flows
+- Atlas walks `tasks/open/` and `tasks/in-progress/` at session start to surface what's waiting
+
+### Session Logs
+
+Structured session summaries written by Atlas at session close.
+
+**Rules:**
+- Atlas writes a session log when the user signals session end
+- Each log is a markdown file: `YYYY-MM-DD.md`
+- `INDEX.md` tracks all sessions in a table
+- Session logs capture what mattered — different from raw conversation exports
 
 ## Why folders, not a database?
 

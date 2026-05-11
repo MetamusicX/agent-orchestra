@@ -8,6 +8,19 @@ A blueprint for building a team of specialised AI agents — each with a role, a
 
 ---
 
+## What's new in v2
+
+v2 adds four capabilities that make the team persistent across sessions:
+
+- **Task continuity.** Work that spans sessions is tracked as markdown files in `Team Knowledge/tasks/`. Atlas walks open and in-progress tasks at session start — nothing falls through the cracks.
+- **Per-agent journals.** Each agent accumulates durable insights in `Team/journals/<agent-name>/`. Before delegating, Atlas checks the journal. Learning compounds.
+- **Session logging.** Atlas writes a structured session summary on session close — what happened, what changed, what's still open. The complement to tasks: tasks track what needs to happen, session logs track what did happen.
+- **SOPs and Workstreams.** Codified procedures in `Team Knowledge/`. SOPs are atomic single-agent procedures. Workstreams are multi-agent orchestration flows. Atlas references these when delegating, ensuring consistency even when session context is lost.
+
+All additions are additive. v1 deployments gain the new folders without losing anything.
+
+---
+
 ## The idea
 
 One AI assistant doing everything is like one employee doing every job. It works — until it doesn't.
@@ -99,6 +112,10 @@ Complex projects often require multiple agents working in sequence. A domain exp
 
 Every agent is a markdown file. The entire system runs on your agent platform's native features: a system prompt for the orchestrator, individual files for specialists, and a simple folder structure for workflow management.
 
+### 8. The team remembers
+
+Between sessions, an LLM forgets everything. Tasks, journals, and session logs compensate: tasks make work persistent, journals make learning persistent, session logs make context persistent. Every piece of memory is a plain markdown file — readable by any human, any LLM, on any platform.
+
 ---
 
 ## Quick start
@@ -134,23 +151,40 @@ zissa-agent-orchestra/
 │   ├── design-principles.md
 │   ├── hiring-pipeline.md
 │   ├── collaboration.md
-│   └── model-selection.md
-├── templates/               # Build your own agents
+│   ├── model-selection.md
+│   ├── task-continuity.md
+│   ├── session-logging.md
+│   ├── sops-and-workstreams.md
+│   └── agent-journals.md
+├── templates/               # Build your own agents + persistence templates
 │   ├── agent-template.md
 │   ├── hire-brief-template.md
-│   └── guardrails-checklist.md
+│   ├── guardrails-checklist.md
+│   ├── task-template.md
+│   ├── journal-entry-template.md
+│   ├── session-log-template.md
+│   ├── sop-template.md
+│   └── workstream-template.md
 ├── examples/                # Anonymised examples from a real deployment
 │   ├── academic-evaluator.md
 │   ├── scholarly-writer.md
 │   ├── journal-analyst.md
-│   └── domain-specialist.md
+│   ├── domain-specialist.md
+│   ├── task-monthly-journal.md
+│   ├── sop-meeting-extraction.md
+│   ├── workstream-chapter-production.md
+│   ├── journal-entry-example.md
+│   └── session-log-example.md
 ├── setup/                   # Getting started
 │   ├── getting-started.md
 │   ├── folder-structure.md
 │   ├── claude-code-config.md
-│   └── platform-adaptation.md
+│   ├── platform-adaptation.md
+│   └── team-knowledge-structure.md
 └── diagrams/
-    └── orchestra-topology.mermaid
+    ├── orchestra-topology.mermaid
+    ├── task-lifecycle.mermaid
+    └── session-lifecycle.mermaid
 ```
 
 ---

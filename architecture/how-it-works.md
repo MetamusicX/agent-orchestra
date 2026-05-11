@@ -1,8 +1,8 @@
 # How Zissa Agent Orchestra Works
 
-## The three layers
+## The four layers
 
-Zissa Agent Orchestra has three layers, each with a distinct function:
+Zissa Agent Orchestra has four layers, each with a distinct function:
 
 ### Layer 1: The Orchestrator (Atlas)
 
@@ -29,6 +29,17 @@ Together with Atlas, they form a self-sustaining system that can grow without th
 ### Layer 3: Domain Specialists (you build these)
 
 These are the agents that do your actual work — writing, evaluating, analysing, composing, coding, reviewing. They are built by the hiring pipeline (Merlin + Nolan) or manually by the user from the provided templates.
+
+### Layer 4: Team Knowledge (the persistence layer)
+
+Between sessions, an LLM forgets everything. Layer 4 compensates for this with three mechanisms:
+
+- **Tasks** (`Team Knowledge/tasks/`) — Work that spans sessions is tracked as plain markdown files. Folder location is status: `open/`, `in-progress/`, `done/`, `cancelled/`. Atlas walks open and in-progress tasks at session start, so the team knows what's waiting before doing anything else.
+- **Agent Journals** (`Team/journals/<agent-name>/`) — When an agent learns something durable — an anti-pattern, a decision rule, a process note — it gets written down. Next time Atlas delegates to that agent, relevant journal entries are included in the brief. Learning compounds across sessions.
+- **Session Logs** (`Session Logs/`) — Structured summaries of what happened, written by Atlas at session close. Not raw transcripts — concise records of what the team worked on, what changed, what decisions were made, and what remains open.
+- **SOPs and Workstreams** (`Team Knowledge/SOPs/` and `Team Knowledge/Workstreams/`) — Codified procedures. SOPs are atomic, single-agent procedures for recurring tasks. Workstreams are multi-agent orchestration flows. Atlas references these when delegating, ensuring consistency even when session context is lost.
+
+This layer is what makes the team genuinely persistent. Without it, every session starts from zero. With it, the team picks up where it left off.
 
 ## The workflow
 
@@ -77,7 +88,15 @@ your-project/
 │   ├── ROSTER.md
 │   ├── [Agent1].md
 │   ├── [Agent2].md
-│   └── ...
+│   └── journals/        # Per-agent durable insights
+│       ├── [agent1]/
+│       └── [agent2]/
+├── Team Knowledge/      # Operational knowledge (Layer 4)
+│   ├── tasks/           # open/, in-progress/, done/, cancelled/
+│   ├── SOPs/            # Standard Operating Procedures
+│   └── Workstreams/     # Multi-agent orchestration flows
+├── Session Logs/        # Structured session summaries
+│   └── INDEX.md
 ├── CLAUDE.md            # Atlas's system prompt (Claude Code)
 └── .claude/agents/      # Agent definition files (Claude Code)
 ```
@@ -100,12 +119,12 @@ The roster (`Team/ROSTER.md`) is a living document maintained by Nolan. It lists
 ```markdown
 # Team Roster
 
-| Name   | Role                  | Status |
-|--------|-----------------------|--------|
-| Merlin    | Senior Researcher     | Active |
-| Nolan  | Head of AI Talent     | Active |
-| Kai    | Technical Engineer    | Active |
-| [Your agents appear here as you build them]  |        |
+| Name   | Role                  | Status | Journal |
+|--------|-----------------------|--------|---------|
+| Merlin    | Senior Researcher     | Active | `journals/merlin/` |
+| Nolan  | Head of AI Talent     | Active | `journals/nolan/` |
+| Kai    | Technical Engineer    | Active | `journals/kai/` |
+| [Your agents appear here as you build them]  |        |         |
 ```
 
 The roster is the team's single source of truth. Atlas consults it before every delegation.

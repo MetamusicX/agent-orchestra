@@ -1,0 +1,27 @@
+%% Session Lifecycle — What happens at session start and session close
+
+flowchart TD
+    START([Session begins]) --> WALK[Atlas walks tasks/open/ and tasks/in-progress/]
+    WALK --> REPORT[Atlas reports status to user]
+    REPORT --> BLOCKED{Blocked tasks?}
+    BLOCKED -->|Yes| FLAG[Surface blockers prominently]
+    BLOCKED -->|No| WORK
+    FLAG --> WORK[Normal session work begins]
+
+    WORK --> DELEGATE[Atlas delegates to agents]
+    DELEGATE --> CREATE_TASK{Work spans sessions?}
+    CREATE_TASK -->|Yes| TASK[Create task in tasks/open/]
+    CREATE_TASK -->|No| DIRECT[Agent executes directly]
+    TASK --> AGENT_WORK[Agent works on task]
+    DIRECT --> AGENT_WORK
+
+    AGENT_WORK --> JOURNAL{Durable insight?}
+    JOURNAL -->|Yes| WRITE_JOURNAL[Write journal entry]
+    JOURNAL -->|No| CONTINUE
+    WRITE_JOURNAL --> CONTINUE[Continue or close]
+
+    CONTINUE --> CLOSE([User signals session end])
+    CLOSE --> LOG[Atlas writes session log]
+    LOG --> UPDATE_TASKS[Update all tasks touched]
+    UPDATE_TASKS --> UPDATE_INDEX[Update Session Logs/INDEX.md]
+    UPDATE_INDEX --> CONFIRM[Confirm to user: Session logged]
